@@ -64,7 +64,7 @@ export default function User(props) {
         try {
             const result = await axios({
                 method: 'get',
-                url: "/users/my-account",
+                url: "https://petofile-api.onrender.com/users/my-account",
                 withCredentials: true
             })
             if (result) {
@@ -102,7 +102,7 @@ export default function User(props) {
         try {
             const result = await axios({
                 method: 'patch',
-                url: "/users/update-my-account",
+                url: "https://petofile-api.onrender.com/users/update-my-account",
                 data: values,
                 withCredentials: true
             })

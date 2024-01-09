@@ -32,7 +32,7 @@ export default function UpdatePassword(props) {
         try {
             const result = await axios({
                 method: 'patch',
-                url: "/users/change-password",
+                url: "https://petofile-api.onrender.com/users/change-password",
                 data: values,
                 withCredentials: true
             })

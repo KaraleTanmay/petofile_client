@@ -31,7 +31,7 @@ export default function Pets(props) {
 		try {
 			const result = await axios({
 				method: "get",
-				url: "/pets/?" + queryString + `&page=${page}`,
+				url: "https://petofile-api.onrender.com/pets/?" + queryString + `&page=${page}`,
 				withCredentials: true,
 			});
 			if (!props.logged.email) {

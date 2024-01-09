@@ -19,7 +19,7 @@ export default function Birds(props) {
         try {
             const result = await axios({
                 method: "get",
-                url: `/pets/${id}`,
+                url: `https://petofile-api.onrender.com/pets/${id}`,
                 withCredentials: true
             })
             if (!props.logged) {

@@ -61,7 +61,7 @@ export default function CreatePet(props) {
         try {
             const result = await axios({
                 method: "post",
-                url: "/pets/",
+                url: "https://petofile-api.onrender.com/pets/",
                 data: values,
                 withCredentials: true
             })

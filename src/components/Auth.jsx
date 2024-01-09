@@ -15,7 +15,7 @@ export default function Auth(props) {
         try {
             const result = await axios({
                 method: 'post',
-                url: "/users/login",
+                url: "https://petofile-api.onrender.com/users/login",
                 data: values,
                 withCredentials: true
             })
@@ -33,7 +33,7 @@ export default function Auth(props) {
         try {
             const result = await axios({
                 method: 'post',
-                url: "/users/forgot-password",
+                url: "https://petofile-api.onrender.com/users/forgot-password",
                 data: values
             })
             if (result) {
@@ -49,7 +49,7 @@ export default function Auth(props) {
         try {
             const result = await axios({
                 method: 'post',
-                url: "/users/signup",
+                url: "https://petofile-api.onrender.com/users/signup",
                 data: values
             })
             if (result) {
